@@ -10,10 +10,11 @@
   serde_json = { version = "1", features = ["raw_value"] }
   serde_derive = "1"
   vercel_runtime = { version = "1" }
+  dotenv = "0.15.0"
 
 [lib]
   path = "lib/lib.rs"
 
 [[bin]]
   name = "hello"
-  path = "api/hello.rs"
+  path = "api/hello.json.rs"
